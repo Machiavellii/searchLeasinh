@@ -1,0 +1,35 @@
+.header {
+  background-image: url("../img/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5rem;
+}
+
+.navbar {
+  background-color: #daedef;
+}
+.navbar-expand-md .navbar-collapse {
+  justify-content: flex-end;
+}
+.navbar-brand {
+  width: 15%;
+}
+.navbar-dark .navbar-nav .active > .nav-link {
+  color: #c13333;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+.nav-link {
+  color: #fff;
+}
+.nav-link:hover {
+  color: #634848;
+}
+.underline {
+  width: 100%;
+  height: 0.7rem;
+  background: linear-gradient(45deg, #d61616, #cc4d1cd4, #ff5722c9, #ffeb3b);
+}

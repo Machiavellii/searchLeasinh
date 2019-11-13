@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #0072ff;
+  --secondary-color: #00c6ff;
+  --reviewColor: linear-gradient(to right, #ee0979, #ff6a00);
+}
