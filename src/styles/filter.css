@@ -1,0 +1,135 @@
+.filter-btn {
+  font-size: 1.2rem;
+  border: 0;
+  background: unset;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+.filter-btn > img {
+  width: 15%;
+}
+
+.stock-holder {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 700;
+}
+.stock-text {
+  margin-right: 0.5rem;
+}
+
+.stock-holder > label {
+  margin-bottom: unset;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 54px;
+  height: 27px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 25px;
+  left: 2px;
+  bottom: 1px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background: linear-gradient(90deg, #ea5068, #f9ae03);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 50px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.search-input {
+  background: linear-gradient(90deg, #ea5068, #f9ae03);
+  padding: 0.1rem;
+}
+.search-input > .input {
+  font-size: 1rem;
+  padding: 0 10px;
+  flex: 1 0 auto;
+  color: #5a5a5a;
+  height: 2rem;
+  width: 100%;
+  border: 0;
+  border-radius: 0.15rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.result > span {
+  color: #ea5068;
+  font-weight: 700;
+  text-align: left;
+  line-height: 1.25rem;
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.sort > span {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.sort > select {
+  width: 100px;
+  margin-left: 0.6rem;
+  border: 1px solid #ea5068;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}

@@ -1,0 +1,128 @@
+.content {
+  position: relative;
+  border: 2px solid #fff;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#fff),
+    to(#efefef)
+  );
+  background: -webkit-linear-gradient(left, #fff, #efefef);
+  background: linear-gradient(90deg, #fff, #efefef);
+  padding: 0;
+  line-height: 1.2;
+}
+.content:hover {
+  border: 2px solid #f9ae03;
+}
+.content > p {
+  margin-bottom: 0.5rem;
+}
+.tag {
+  position: absolute;
+  border-width: 50px 50px 0 0;
+  left: 0;
+  right: auto;
+  border-color: #ea5068 transparent transparent;
+  z-index: 5;
+  line-height: 1.2rem;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  text-align: center;
+  color: #fff;
+}
+
+.tag > p {
+  transform: rotate(-45deg);
+  margin-top: -41px;
+  font-size: 10px;
+  line-height: 0.8;
+  margin-left: -9px;
+  width: 50px;
+}
+
+.content-image {
+  text-align: center;
+}
+
+.content-image > span > img {
+  width: 10rem;
+}
+.image-text {
+  font-size: 0.7rem;
+  display: block;
+  color: #333;
+}
+
+.content-text {
+  display: flex;
+  flex-flow: column;
+  padding: 0;
+  color: #333;
+}
+
+.main-text {
+  margin-bottom: 0;
+  font-size: 1.3rem;
+  color: #333;
+  font-weight: 800;
+}
+
+.text-small {
+  font-size: 0.8rem;
+}
+
+.text-down {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+}
+.text-down p {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+.rose {
+  color: #ea5068;
+  font-weight: 800;
+}
+
+.content-deal {
+  display: flex;
+  align-items: center;
+}
+.deal-rating {
+  background: url("../img/icons/score.svg") no-repeat 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 100%;
+  margin: 0 auto;
+  color: #ea5068;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.deal-rating > p {
+  margin-bottom: 0.5rem;
+  margin-right: 0.4rem;
+}
+
+.content-price {
+  color: #333;
+  text-align: center;
+}
+.content-price > p {
+  margin-bottom: unset;
+}
+.content-price > .text-small > span {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.content-price > .btn {
+  padding: 0.3rem 0.5rem;
+  font-size: 0.8rem;
+}

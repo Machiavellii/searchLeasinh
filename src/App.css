@@ -9,3 +9,9 @@
   --secondary-color: #00c6ff;
   --reviewColor: linear-gradient(to right, #ee0979, #ff6a00);
 }
+a:hover {
+  text-decoration: none;
+}
+.container {
+  max-width: 100%;
+}

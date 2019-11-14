@@ -25,7 +25,7 @@
 .nav-link {
   color: #fff;
 }
-.nav-link:hover {
+.navbar-dark .navbar-nav .nav-link:hover {
   color: #634848;
 }
 .underline {
