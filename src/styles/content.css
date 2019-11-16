@@ -24,7 +24,7 @@
   border-width: 50px 50px 0 0;
   left: 0;
   right: auto;
-  border-color: #ea5068 transparent transparent;
+  border-color: var(--primary-color) transparent transparent;
   z-index: 5;
   line-height: 1.2rem;
   width: 0;
@@ -65,13 +65,13 @@
 
 .main-text {
   margin-bottom: 0;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #333;
   font-weight: 800;
 }
 
 .text-small {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
 }
 
 .text-down {
@@ -81,10 +81,10 @@
 }
 .text-down p {
   margin-bottom: 0;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .rose {
-  color: #ea5068;
+  color: var(--primary-color);
   font-weight: 800;
 }
 
@@ -100,7 +100,7 @@
   width: 5rem;
   height: 100%;
   margin: 0 auto;
-  color: #ea5068;
+  color: var(--primary-color);
   font-size: 1.3rem;
   font-weight: 700;
 }
@@ -125,4 +125,5 @@
 .content-price > .btn {
   padding: 0.3rem 0.5rem;
   font-size: 0.8rem;
+  width: 100%;
 }

@@ -1,12 +1,16 @@
 import React from "react";
 
 import Mokka from "../../img/cars/mokka.png";
+import Filter from "../filter/Filter";
 
 import "../../styles/content.css";
 
 const Content = () => {
   return (
     <div className="container">
+      <div className="d-none d-lg-block">
+        <Filter />
+      </div>
       <a href="!#" className="content-link">
         <div className="row mb-2 content my-2">
           <div className="tag">
@@ -18,19 +22,19 @@ const Content = () => {
             </span>
             <span className="image-text">Images for illustration only</span>
           </div>
-          <div className="col-sm-5 content-text ">
+          <div className="col-sm-5  content-text mt-2">
             <div className="text-up">
-              <p className="main-text">Vauxhall Mokka X</p>
+              <p className="main-text ">Vauxhall Mokka X</p>
               <p className="text-small">147 ecoTEC Elite Nav 5or</p>
             </div>
             <div className="text-down">
-              <div className="text-left">
+              <div>
                 <p> Petrol | Manual | FWD</p>
                 <p>
                   Lease Type <span className="rose">Personal</span>
                 </p>
               </div>
-              <div className="text-left">
+              <div>
                 <p>
                   Payment Profile <span className="rose">9 + 23</span>
                 </p>
@@ -46,7 +50,7 @@ const Content = () => {
             </div>
           </div>
           <div className="col-sm-2 content-price">
-            <p className="main-text">£139.99</p>
+            <p className="main-text mt-1">£139.99</p>
             <div className="per-month">
               <p className="text-small">Per month inc. VAT</p>
             </div>

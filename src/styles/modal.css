@@ -1,0 +1,44 @@
+.btn-modal {
+  position: absolute;
+  top: 50%;
+  transform: rotate(-90deg);
+  right: -2.4rem;
+  z-index: 1;
+  width: 7rem;
+  background-color: var(--primary-color);
+  border: unset;
+  font-weight: 700;
+}
+
+.btn-modal:hover {
+  background-color: #dc1a38;
+}
+.modal-header {
+  color: var(--primary-color);
+  border-bottom: unset;
+}
+.modal-header > button > span {
+  font-size: 2.3rem;
+}
+.close {
+  opacity: unset;
+  color: var(--primary-color);
+}
+.modal-body > .form-control {
+  border-color: var(--primary-color);
+}
+.modal-footer {
+  border-top: unset;
+}
+.modal-footer > button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-color: unset;
+  padding: 0.3rem 1.5rem;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 780px;
+  }
+}

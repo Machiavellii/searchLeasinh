@@ -1,0 +1,96 @@
+.sidebar {
+  font-weight: 600;
+  background: linear-gradient(90deg, #efefef, #fff);
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.sidebar span {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-rose:hover {
+  background: #dc1a38;
+  color: #fff;
+}
+.btn-grey:hover {
+  background: #979395;
+}
+
+.budget-span {
+  font-weight: 500 !important;
+  font-size: 0.75rem !important;
+  width: 3rem;
+  line-height: 0.95rem;
+  font-family: omnesregular, sans-serif;
+}
+
+.monthly,
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btns {
+  border: 1px solid var(--primary-color);
+  width: 100%;
+  font-size: 0.9rem;
+}
+.btns:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.modals {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  justify-content: space-between;
+}
+.modals i {
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border-radius: 0.4rem;
+  padding: 0.3rem;
+}
+
+.modals i:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.clearBtn {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.clearBtn:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  hr {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+  .type {
+    font-size: 0.9rem;
+  }
+  .btns {
+    padding: 0.3rem 0.4rem;
+  }
+  .btn-rose,
+  .btn-grey {
+    padding: 0.3rem 0.5rem;
+    width: 4.5rem;
+    font-size: 0.88rem;
+  }
+}
