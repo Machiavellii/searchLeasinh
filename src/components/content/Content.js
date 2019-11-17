@@ -16,13 +16,53 @@ const Content = () => {
           <div className="tag">
             <p>Stock Avialable</p>
           </div>
-          <div className="col-sm-3 content-image">
+          <div className="col-12 d-md-none d-lg-none d-xl-none d-sm-flex d-flex content-text ">
+            <div className="text-up">
+              <p className="main-text ">Vauxhall Mokka X</p>
+              <p className="text-small">147 ecoTEC Elite Nav 5or</p>
+            </div>
+          </div>
+
+          <div className="col-6 col-md-3 content-image">
             <span>
               <img src={Mokka} alt="" className="img-fluid" />
             </span>
             <span className="image-text">Images for illustration only</span>
           </div>
-          <div className="col-sm-5  content-text mt-2">
+
+          <div className="col-6 smallDealContent mb-2  d-md-none d-lg-none d-xl-none d-sm-flex d-flex">
+            <div className="content-deal">
+              <div className="deal-rating">
+                <p>100</p>
+              </div>
+            </div>
+            <div className=" content-price">
+              <p className="main-text">£139.99</p>
+              <div className="per-month">
+                <p className="text-small">Per month inc. VAT</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-6 content-price price-small d-md-none d-lg-none d-xl-none d-sm-flex d-flex">
+            <p className="text-small mb-2">
+              <span>£1,454.93 Total Upfront</span>
+            </p>
+            <div>
+              <p>
+                Payment Profile <span className="rose">9 + 23</span>
+              </p>
+              <p>
+                Miles per Annum <span className="rose">8k</span>
+              </p>
+            </div>
+          </div>
+
+          <div className="col-6  d-md-none d-lg-none d-xl-none d-sm-flex d-flex">
+            <button className="btn btn-success btn-block">Review Deal</button>
+          </div>
+
+          <div className="col-md-5  content-text mt-2 d-none d-md-flex">
             <div className="text-up">
               <p className="main-text ">Vauxhall Mokka X</p>
               <p className="text-small">147 ecoTEC Elite Nav 5or</p>
@@ -44,12 +84,12 @@ const Content = () => {
               </div>
             </div>
           </div>
-          <div className="col-sm-2 content-deal">
+          <div className="col-md-2 content-deal  d-none d-md-flex">
             <div className="deal-rating">
               <p>100</p>
             </div>
           </div>
-          <div className="col-sm-2 content-price">
+          <div className="col-md-2 content-price  d-none d-md-block ">
             <p className="main-text mt-1">£139.99</p>
             <div className="per-month">
               <p className="text-small">Per month inc. VAT</p>
@@ -60,6 +100,9 @@ const Content = () => {
             </p>
             <button className="btn btn-success">Review Deal</button>
           </div>
+        </div>
+        <div className="d-md-none d-lg-none d-xl-none d-sm-block d-block">
+          <hr />
         </div>
       </a>
     </div>

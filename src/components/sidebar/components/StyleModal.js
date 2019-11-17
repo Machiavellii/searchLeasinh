@@ -5,7 +5,7 @@ const StyleModal = () => {
     <div className="styleModal">
       <div className="modals">
         <span>Style</span>
-        <i class="fas fa-plus"></i>
+        <i className="fas fa-plus"></i>
       </div>
     </div>
   );

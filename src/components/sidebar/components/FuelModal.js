@@ -5,7 +5,7 @@ const FuelModal = () => {
     <div className="fuelModal">
       <div className="modals">
         <span> Fuel</span>
-        <i class="fas fa-plus"></i>
+        <i className="fas fa-plus"></i>
       </div>
     </div>
   );

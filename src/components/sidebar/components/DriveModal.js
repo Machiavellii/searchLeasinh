@@ -5,7 +5,7 @@ const DriveModal = () => {
     <div className="driveModal">
       <div className="modals">
         <span>Drive</span>
-        <i class="fas fa-plus"></i>
+        <i className="fas fa-plus"></i>
       </div>
     </div>
   );

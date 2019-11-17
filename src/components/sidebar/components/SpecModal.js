@@ -5,7 +5,7 @@ const SpecModal = () => {
     <div className="specModal">
       <div className="modals">
         <span> Spec</span>
-        <i class="fas fa-plus"></i>
+        <i className="fas fa-plus"></i>
       </div>
     </div>
   );

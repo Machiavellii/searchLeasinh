@@ -40,7 +40,12 @@ const Sidebar = () => {
         <hr />
         <Spec />
         <hr />
-        <buutton className="btn btn-classic clearBtn">Clear All</buutton>
+        <button className="btn btn-classic clearBtn  d-none d-lg-inline-block">
+          Clear All
+        </button>
+        <button className="btn btn-classic searchBtn  d-block d-lg-none">
+          Search
+        </button>
       </form>
     </div>
   );
