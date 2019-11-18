@@ -18,12 +18,6 @@ const Filter = () => {
     setVisible(false);
   };
 
-  const bg = {
-    overlay: {
-      background: "#333"
-    }
-  };
-
   return (
     <Fragment>
       <div className="filter-holder pt-3">
@@ -161,7 +155,7 @@ const Filter = () => {
             <img src={filterImg} alt="" />
             Filter
           </button>
-          <buutton className="btn btn-classic clearBtn">Clear All</buutton>
+          <button className="btn btn-classic clearBtn">Clear All</button>
         </div>
         <hr />
         <Sidebar />

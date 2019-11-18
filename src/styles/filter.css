@@ -148,32 +148,3 @@ input:checked + .slider:before {
 .page-link:hover {
   color: var(--primary-color);
 }
-
-@media (max-width: 992px) {
-  .holder-search {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .result {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .result > span {
-    font-size: 1rem;
-  }
-  .stock-text {
-    font-size: 1rem;
-  }
-  .sort > select {
-    width: 100px;
-    margin-left: 0.6rem;
-    margin-bottom: 0.5rem;
-    padding: 0.5rem;
-    font-size: 1rem;
-  }
-  .sort > span {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-    padding: unset;
-  }
-}

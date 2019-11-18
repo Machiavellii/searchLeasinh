@@ -37,56 +37,123 @@
   padding: 0.3rem 1.5rem;
 }
 
-@media (max-width: 576px) {
-  .rodal-dialog {
-    min-width: 14rem !important;
-  }
+/* MODALS SIDEBAR */
+.myModal {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  /* transform: translate(-50%, -50%); */
+  z-index: 20;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 50px 6px;
+  padding: 1.5rem;
+  width: 600px;
+}
+.modalBrand {
+  top: -2%;
+}
+.modalBrand .popup-arrow {
+  top: 63%;
 }
 
-@media (min-width: 576px) {
-  .modal-dialog {
-    max-width: 780px;
-  }
+.myModal .modalHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  align-items: center;
+}
+.modalHeader h6 {
+  font-weight: 700;
+}
+.modalHeader .close {
+  font-size: unset;
+}
+.close > span {
+  font-size: 2rem !important;
+  cursor: pointer;
+}
+.manufacturers {
+  border: unset;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-radius: 10px;
+  filter: grayscale(1);
+  width: 3.5rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+}
+.manufacturers:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.manufacturers:focus {
+  outline: unset;
+}
+.manufacturers > span {
+  font-size: 0.7rem !important;
+}
+.activeBrand {
+  filter: none;
+  box-shadow: 0 0 0 2px var(--primary-color);
 }
 
-@media (max-width: 992px) {
-  .small-btnfilter {
-    display: flex;
-    justify-content: space-between;
-    background: linear-gradient(90deg, #efefef, #fff);
-  }
-  .small-btnfilter > .filter-btn {
-    width: 2rem;
-    font-size: initial;
-  }
-  .small-btnfilter > .filter-btn > img {
-    width: 100%;
-  }
-  .sidebar {
-    height: 100%;
-  }
+.myModal img {
+  width: 30px;
+  height: 30px;
+}
 
-  .rodal-dialog {
-    width: 30% !important;
-    height: auto !important;
-    padding: unset !important;
-    right: 0 !important;
-    margin: unset !important;
-    background: linear-gradient(90deg, #efefef, #fff) !important;
-    min-width: 15rem;
-  }
-  .rodal-mask {
-    background: rgba(0, 0, 0, 0.75) !important;
-  }
-  .btn-rose,
-  .btn-grey {
-    width: 5rem !important;
-  }
-  .rodal-close {
-    display: none;
-  }
+.smallCarDiv img {
+  width: 50%;
+}
 
-  .btns {
-    padding: 0.375rem 0.75rem !important;
-  }
+.modalFuel {
+  top: 47%;
+  width: 350px;
+}
+
+.headerFuel {
+  justify-content: flex-end !important;
+}
+
+.modalFuel .manufacturers {
+  width: 3rem;
+  height: 4rem;
+  margin: auto;
+  margin-bottom: 0.4rem;
+}
+.modalDrive {
+  width: 350px;
+  top: 50%;
+}
+.modalDrive .manufacturers {
+  width: 5rem;
+  height: 5rem;
+  margin: auto;
+}
+.modalDrive h6 {
+  font-weight: 800;
+}
+
+.modalStyle {
+  width: 400px;
+  top: 57%;
+}
+.modalStyle .manufacturers {
+  margin: auto;
+}
+
+.popup-arrow {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  background: rgb(255, 255, 255);
+  transform: rotate(135deg);
+  margin: -10px;
+  z-index: -1;
+  box-shadow: none;
+  border: 0px;
+  top: 48%;
+  left: 0%;
 }
