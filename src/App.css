@@ -61,6 +61,19 @@ option {
   .rodal-dialog {
     min-width: 14rem !important;
   }
+
+  .content-image {
+    padding: 0;
+  }
+  .content-price > .text-small > span {
+    font-weight: 600;
+  }
+  .content-price > p {
+    font-size: 1.2rem !important;
+  }
+  .btn-success {
+    font-size: 1rem !important;
+  }
 }
 
 @media (min-width: 576px) {
@@ -191,8 +204,8 @@ option {
     box-shadow: unset;
     width: auto;
     height: 100vh;
-    overflow: scroll;
     padding: 1rem;
+    overflow: auto;
   }
   .modalSmallHeader {
     flex-direction: column;

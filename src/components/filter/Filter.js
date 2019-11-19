@@ -22,7 +22,7 @@ const Filter = () => {
     <Fragment>
       <div className="filter-holder pt-3">
         <div className="row">
-          <div className="col-sm-4 d-lg-none">
+          <div className="col-4 d-lg-none">
             <button
               type="button"
               className="filter-btn"
@@ -32,7 +32,7 @@ const Filter = () => {
               Filter
             </button>
           </div>
-          <div className="col-sm-8 col-lg-12">
+          <div className="col-8 col-lg-12">
             {/* Only for small device */}
             <div className="stock-holder d-lg-none">
               <span className="stock-text">in Stock:</span>

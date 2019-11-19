@@ -30,42 +30,44 @@ const SpecModal = () => {
   };
 
   const parking = parkingModal ? (
-    <div className="row smallModals">
-      <i
-        className="fas fa-plus d-none d-lg-flex"
-        onClick={() => setParkingModal(!parkingModal)}
-      />
-      <div className="modalSmallHeader  mb-3 d-xs-flex d-sm-flex d-md-flex d-lg-none">
-        <h6 className="modalTitle">Filter: Spec</h6>
-        <h6 className="modalTitle mb-3">Sub Filter: Parking Sensos</h6>
-        <button
-          className="backBtn"
-          onClick={() => setParkingModal(!parkingModal)}
-        >
-          <i className="fas fa-chevron-left"></i> Back
-        </button>
-        <hr />
-        <div className="row">
-          {parkingSensors.map((car, i) => (
-            <div className="col-3 " key={i}>
-              <button
-                type="button"
-                className="manufacturers"
-                onClick={e => activeClass(e)}
-              >
-                <img
-                  src={require(`../../../img/specification/${car.img}`)}
-                  alt=""
-                  // onClick={e => smallImg(car.id)}
-                />
-                <span>{car.title}</span>
-              </button>
-            </div>
-          ))}
+    <Fragment>
+      <div className="row smallModals d-lg-none d-xl-none">
+        <div className="modalSmallHeader  mb-3  ">
+          <h6 className="modalTitle">Filter: Spec</h6>
+          <h6 className="modalTitle mb-3">Sub Filter: Parking Sensos</h6>
+          <button
+            className="backBtn"
+            onClick={() => setParkingModal(!parkingModal)}
+          >
+            <i className="fas fa-chevron-left"></i> Back
+          </button>
+          <hr />
+          <div className="row">
+            {parkingSensors.map((car, i) => (
+              <div className="col-3 " key={i}>
+                <button
+                  type="button"
+                  className="manufacturers"
+                  onClick={e => activeClass(e)}
+                >
+                  <img
+                    src={require(`../../../img/specification/${car.img}`)}
+                    alt=""
+                    // onClick={e => smallImg(car.id)}
+                  />
+                  <span>{car.title}</span>
+                </button>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
-      <div className="d-none d-lg-flex">
+      <div className="row smallModals d-none d-lg-flex">
+        <i
+          className="fas fa-plus"
+          onClick={() => setParkingModal(!parkingModal)}
+        />
         {parkingSensors.map((car, i) => (
           <div className="col-3 " key={i}>
             <button
@@ -83,46 +85,45 @@ const SpecModal = () => {
           </div>
         ))}
       </div>
-    </div>
+    </Fragment>
   ) : (
     ""
   );
 
   const heated = heatedModal ? (
-    <div className="row smallModals">
-      <i
-        className="fas fa-plus d-none d-lg-flex"
-        onClick={() => setHeated(!heatedModal)}
-      />
-
-      <div className="modalSmallHeader  mb-3 d-xs-flex d-sm-flex d-md-flex d-lg-none">
-        <h6 className="modalTitle">Filter: Spec</h6>
-        <h6 className="modalTitle mb-3">Sub Filter: Heated Seads</h6>
-        <button className="backBtn" onClick={() => setHeated(!heatedModal)}>
-          <i className="fas fa-chevron-left"></i> Back
-        </button>
-        <hr />
-        <div className="row">
-          {heatedData.map((car, i) => (
-            <div className="col-3 " key={i}>
-              <button
-                type="button"
-                className="manufacturers"
-                onClick={e => activeClass(e)}
-              >
-                <img
-                  src={require(`../../../img/specification/${car.img}`)}
-                  alt=""
-                  // onClick={e => smallImg(car.id)}
-                />
-                <span>{car.title}</span>
-              </button>
-            </div>
-          ))}
+    <Fragment>
+      <div className="row smallModals d-lg-none d-xl-none">
+        <div className="modalSmallHeader  mb-3">
+          <h6 className="modalTitle">Filter: Spec</h6>
+          <h6 className="modalTitle mb-3">Sub Filter: Heated Seads</h6>
+          <button className="backBtn" onClick={() => setHeated(!heatedModal)}>
+            <i className="fas fa-chevron-left"></i> Back
+          </button>
+          <hr />
+          <div className="row">
+            {heatedData.map((car, i) => (
+              <div className="col-3 " key={i}>
+                <button
+                  type="button"
+                  className="manufacturers"
+                  onClick={e => activeClass(e)}
+                >
+                  <img
+                    src={require(`../../../img/specification/${car.img}`)}
+                    alt=""
+                    // onClick={e => smallImg(car.id)}
+                  />
+                  <span>{car.title}</span>
+                </button>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
-      <div className="d-none d-lg-flex">
+      <div className="row smallModals d-none d-lg-flex">
+        <i className="fas fa-plus " onClick={() => setHeated(!heatedModal)} />
+
         {heatedData.map((car, i) => (
           <div className="col-3 " key={i}>
             <button
@@ -140,46 +141,45 @@ const SpecModal = () => {
           </div>
         ))}
       </div>
-    </div>
+    </Fragment>
   ) : (
     ""
   );
 
   const leather = leatherModal ? (
-    <div className="row smallModals">
-      <i
-        className="fas fa-plus d-none d-lg-flex"
-        onClick={() => setLeather(!leatherModal)}
-      />
-
-      <div className="modalSmallHeader  mb-3 d-xs-flex d-sm-flex d-md-flex d-lg-none">
-        <h6 className="modalTitle">Filter: Spec</h6>
-        <h6 className="modalTitle mb-3">Sub Filter: Leather Seats</h6>
-        <button className="backBtn" onClick={() => setLeather(!leatherModal)}>
-          <i className="fas fa-chevron-left"></i> Back
-        </button>
-        <hr />
-        <div className="row">
-          {heatedData.map((car, i) => (
-            <div className="col-3 " key={i}>
-              <button
-                type="button"
-                className="manufacturers"
-                onClick={e => activeClass(e)}
-              >
-                <img
-                  src={require(`../../../img/specification/${car.img}`)}
-                  alt=""
-                  // onClick={e => smallImg(car.id)}
-                />
-                <span>{car.title}</span>
-              </button>
-            </div>
-          ))}
+    <Fragment>
+      <div className="row smallModals d-lg-none d-xl-none">
+        <div className="modalSmallHeader  mb-3 ">
+          <h6 className="modalTitle">Filter: Spec</h6>
+          <h6 className="modalTitle mb-3">Sub Filter: Leather Seats</h6>
+          <button className="backBtn" onClick={() => setLeather(!leatherModal)}>
+            <i className="fas fa-chevron-left"></i> Back
+          </button>
+          <hr />
+          <div className="row">
+            {heatedData.map((car, i) => (
+              <div className="col-3 " key={i}>
+                <button
+                  type="button"
+                  className="manufacturers"
+                  onClick={e => activeClass(e)}
+                >
+                  <img
+                    src={require(`../../../img/specification/${car.img}`)}
+                    alt=""
+                    // onClick={e => smallImg(car.id)}
+                  />
+                  <span>{car.title}</span>
+                </button>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
-      <div className="d-none d-lg-flex">
+      <div className="row smallModals d-none d-lg-flex">
+        <i className="fas fa-plus " onClick={() => setLeather(!leatherModal)} />
+
         {leatherData.map((car, i) => (
           <div className="col-3 " key={i}>
             <button
@@ -197,61 +197,63 @@ const SpecModal = () => {
           </div>
         ))}
       </div>
-    </div>
+    </Fragment>
   ) : (
     ""
   );
 
   const styleAlloys = alloysModal ? (
-    <div className="row smallModals styleAlloys">
-      <div className="modalHeader col-12 d-none d-lg-flex">
-        <h6 className="modalTitle">Select a minimum size</h6>
-        <button className="close" onClick={() => setAlloys(!alloysModal)}>
-          <span>&times;</span>
-        </button>
-      </div>
+    <Fragment>
+      <div className="row smallModals styleAlloys d-lg-none d-xl-none">
+        <div className="modalSmallHeader">
+          <h6 className="modalTitle mb-3">Filter: Spec</h6>
+          <h6 className="modalTitle mb-3">Sub Filter: Alloys</h6>
+          <button className="backBtn" onClick={() => setAlloys(!alloysModal)}>
+            <i className="fas fa-chevron-left"></i> Back
+          </button>
+          <hr />
+          <h6 className="modalTitle">Select a minimum size</h6>
 
-      <div className="modalSmallHeader  mb-3 d-xs-flex d-sm-flex d-md-flex d-lg-none">
-        <h6 className="modalTitle mb-3">Filter: Spec</h6>
-        <h6 className="modalTitle mb-3">Sub Filter: Alloys</h6>
-        <button className="backBtn" onClick={() => setAlloys(!alloysModal)}>
-          <i className="fas fa-chevron-left"></i> Back
-        </button>
-        <hr />
-        <h6 className="modalTitle">Select a minimum size</h6>
-
-        <div className="row">
-          <div className="col-12">
-            <button
-              className="manufacturers"
-              type="button"
-              onClick={e => activeClass(e)}
-            >
-              <img src={alloysImg} alt="" />
-              <span>All Alloys</span>
-            </button>
-            <hr />
-          </div>
-          {styleData.map((car, i) => (
-            <div className="col-4 " key={i}>
+          <div className="row">
+            <div className="col-12">
               <button
-                type="button"
                 className="manufacturers"
+                type="button"
                 onClick={e => activeClass(e)}
               >
-                <img
-                  src={require(`../../../img/specification/${car.img}`)}
-                  alt=""
-                  // onClick={e => smallImg(car.id)}
-                />
-                <span>{car.title}</span>
+                <img src={alloysImg} alt="" />
+                <span>All Alloys</span>
               </button>
+              <hr />
             </div>
-          ))}
+            {styleData.map((car, i) => (
+              <div className="col-4 " key={i}>
+                <button
+                  type="button"
+                  className="manufacturers"
+                  onClick={e => activeClass(e)}
+                >
+                  <img
+                    src={require(`../../../img/specification/${car.img}`)}
+                    alt=""
+                    // onClick={e => smallImg(car.id)}
+                  />
+                  <span>{car.title}</span>
+                </button>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
-      <div className="d-none d-lg-flex">
+      <div className="row smallModals styleAlloys d-none d-lg-flex">
+        <div className="modalHeader col-12 ">
+          <h6 className="modalTitle">Select a minimum size</h6>
+          <button className="close" onClick={() => setAlloys(!alloysModal)}>
+            <span>&times;</span>
+          </button>
+        </div>
+
         <div className="row">
           <div className="col-12">
             <button
@@ -283,7 +285,7 @@ const SpecModal = () => {
           ))}
         </div>
       </div>
-    </div>
+    </Fragment>
   ) : (
     ""
   );
@@ -306,7 +308,7 @@ const SpecModal = () => {
             </button>
           </div>
 
-          <div className="modalSmallHeader  mb-3 d-xs-flex d-sm-flex d-md-flex d-lg-none">
+          <div className="modalSmallHeader  mb-3 d-lg-none d-xl-none">
             <h6 className="modalTitle mb-3">Filter: Spec</h6>
             <button className="backBtn" onClick={() => setModal(false)}>
               <i className="fas fa-chevron-left"></i> Back
@@ -415,7 +417,7 @@ const SpecModal = () => {
                   />
                   <span>Heated Seats</span>
                 </button>
-                {heated}
+                <div className="d-none d-lg-flex"> {heated}</div>
               </div>
 
               <div className="col-3 mb-2 icons-holder">
@@ -435,7 +437,7 @@ const SpecModal = () => {
                   />
                   <span>Leather Seats</span>
                 </button>
-                {leather}
+                <div className="d-none d-lg-flex">{leather}</div>
               </div>
             </div>
           </div>
@@ -444,18 +446,10 @@ const SpecModal = () => {
             <button className="btn btn-classic clearBtn">Clear All</button>
           </div>
           <div className="popup-arrow"></div>
-          <div className="d-lg-none d-xs-flex d-sm-flex d-md-flex">
-            {parking}
-          </div>
-          <div className="d-lg-none d-xs-flex d-sm-flex d-md-flex">
-            {heated}
-          </div>
-          <div className="d-lg-none d-xs-flex d-sm-flex d-md-flex">
-            {leather}
-          </div>
-          <div className="d-lg-none d-xs-flex d-sm-flex d-md-flex">
-            {styleAlloys}
-          </div>
+          <div className="d-lg-none d-xl-none">{parking}</div>
+          <div className="d-lg-none d-xl-none">{heated}</div>
+          <div className="d-lg-none d-xl-none">{leather}</div>
+          <div className="d-lg-none d-xl-none">{styleAlloys}</div>
         </div>
       )}
     </Fragment>
