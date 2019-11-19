@@ -24,12 +24,21 @@ const DriveModal = () => {
 
       {modal && (
         <div className="myModal modalDrive">
-          <div className="modalHeader ">
+          <div className="modalHeader d-none d-lg-flex">
             <h6 className="modalTitle">Drive</h6>
             <button className="close" onClick={() => setModal(false)}>
               <span>&times;</span>
             </button>
           </div>
+
+          <div className="modalSmallHeader  mb-3 d-xs-flex d-sm-flex d-md-flex d-lg-none">
+            <h6 className="modalTitle mb-3">Filter: Drive</h6>
+            <button className="backBtn" onClick={() => setModal(false)}>
+              <i className="fas fa-chevron-left"></i> Back
+            </button>
+            <hr />
+          </div>
+
           <div className="modalBody">
             <div className="row">
               {drive.map((car, i) => (

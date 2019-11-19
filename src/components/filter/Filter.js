@@ -23,7 +23,11 @@ const Filter = () => {
       <div className="filter-holder pt-3">
         <div className="row">
           <div className="col-sm-4 d-lg-none">
-            <button className="filter-btn" onClick={() => openModal()}>
+            <button
+              type="button"
+              className="filter-btn"
+              onClick={() => openModal()}
+            >
               <img src={filterImg} alt="" />
               Filter
             </button>
@@ -151,11 +155,17 @@ const Filter = () => {
         animation={"slideLeft"}
       >
         <div className="col-sm-12 d-lg-none pt-3 small-btnfilter">
-          <button className="filter-btn" onClick={() => closeModal()}>
+          <button
+            type="button"
+            className="filter-btn"
+            onClick={() => closeModal()}
+          >
             <img src={filterImg} alt="" />
             Filter
           </button>
-          <button className="btn btn-classic clearBtn">Clear All</button>
+          <button type="button" className="btn btn-classic clearBtn">
+            Clear All
+          </button>
         </div>
         <hr />
         <Sidebar />

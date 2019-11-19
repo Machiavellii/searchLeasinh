@@ -183,6 +183,40 @@ option {
   .btns {
     padding: 0.375rem 0.75rem !important;
   }
+
+  /* MODALS */
+  .myModal {
+    top: 0;
+    left: -2%;
+    box-shadow: unset;
+    width: auto;
+    height: 100vh;
+    overflow: scroll;
+    padding: 1rem;
+  }
+  .modalSmallHeader {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .backBtn {
+    border: unset;
+    background: transparent;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    text-align: left;
+  }
+  .smallModals {
+    left: 0;
+    height: 100vh;
+    width: auto;
+  }
+  .modalSpec .icons-holder i {
+    right: 0;
+    top: 0;
+  }
+  .modalStyle p {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 1200px) {

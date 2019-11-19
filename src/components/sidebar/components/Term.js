@@ -10,22 +10,34 @@ const Term = () => {
         <div className="col sm-9">
           <div className="row no-gutters">
             <div className="col ml-2">
-              <button className="btn btn-classic btns">12m</button>
+              <button type="button" className="btn btn-classic btns">
+                12m
+              </button>
             </div>
             <div className="col ml-1">
-              <button className="btn btn-classic btns">18m</button>
+              <button type="button" className="btn btn-classic btns">
+                18m
+              </button>
             </div>
             <div className="col ml-1">
-              <button className="btn btn-classic btns">2y</button>
+              <button type="button" className="btn btn-classic btns">
+                2y
+              </button>
             </div>
             <div className="col ml-2 mt-1">
-              <button className="btn btn-classic btns">3y</button>
+              <button type="button" className="btn btn-classic btns">
+                3y
+              </button>
             </div>
             <div className="col ml-1 mt-1">
-              <button className="btn btn-classic btns">4y</button>
+              <button type="button" className="btn btn-classic btns">
+                4y
+              </button>
             </div>
             <div className="col ml-1 mt-1">
-              <button className="btn btn-classic btns">5y</button>
+              <button type="button" className="btn btn-classic btns">
+                5y
+              </button>
             </div>
           </div>
         </div>

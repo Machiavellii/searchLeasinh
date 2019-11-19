@@ -329,3 +329,158 @@ export const styleType = [
     title: "Supermini"
   }
 ];
+
+export const convenience = [
+  {
+    id: 19,
+    img: "apple-play--android-auto.svg",
+    title: "Apple Play / Android Auto"
+  },
+  {
+    id: 20,
+    img: "bluetooth.svg",
+    title: "Bluetooth"
+  },
+  {
+    id: 21,
+    img: "dab.svg",
+    title: "Dab"
+  },
+  {
+    id: 4,
+    img: "park-assist-camera.svg",
+    title: "Park Assist Camera"
+  },
+
+  {
+    id: 10,
+    img: "sat-nav.svg",
+    title: "Sat Nav"
+  },
+  {
+    id: 11,
+    img: "wireless-mobile-charging.svg",
+    title: "Wirelee Mobile Charging"
+  }
+];
+
+export const comfort = [
+  {
+    id: 13,
+    img: "climate-control.svg",
+    title: "Climate Control"
+  },
+  {
+    id: 14,
+    img: "cruise-control.svg",
+    title: "Cruise Control"
+  },
+
+  {
+    id: 17,
+    img: "panoramic-roof.svg",
+    title: "Panoramic Roof"
+  },
+  {
+    id: 18,
+    img: "sunroof.svg",
+    title: "Sunroof"
+  }
+];
+
+export const parkingSensors = [
+  {
+    id: 45,
+    img: "parking-sensors.svg",
+    title: "Front & Rear"
+  },
+  {
+    id: 46,
+    img: "parking-sensors.svg",
+    title: "Front"
+  },
+  {
+    id: 47,
+    img: "parking-sensors.svg",
+    title: "Rear"
+  }
+];
+
+export const heatedData = [
+  {
+    id: 50,
+    img: "heated-seats.svg",
+    title: "Front & Rear"
+  },
+  {
+    id: 51,
+    img: "heated-seats.svg",
+    title: "Front"
+  },
+  {
+    id: 52,
+    img: "heated-seats.svg",
+    title: "Rear"
+  }
+];
+
+export const leatherData = [
+  {
+    id: 54,
+    img: "leather-seats.svg",
+    title: "Front & Rear"
+  },
+  {
+    id: 55,
+    img: "leather-seats.svg",
+    title: "Front"
+  },
+  {
+    id: 56,
+    img: "leather-seats.svg",
+    title: "Rear"
+  }
+];
+
+export const styleData = [
+  {
+    id: 57,
+    img: "alloys.svg",
+    title: "15 inch"
+  },
+  {
+    id: 58,
+    img: "alloys.svg",
+    title: "16 inch"
+  },
+  {
+    id: 59,
+    img: "alloys.svg",
+    title: "17 inch"
+  },
+  {
+    id: 60,
+    img: "alloys.svg",
+    title: "18 inch"
+  },
+  {
+    id: 62,
+    img: "alloys.svg",
+    title: "19 inch"
+  },
+  {
+    id: 62,
+    img: "alloys.svg",
+    title: "20 inch"
+  },
+  {
+    id: 63,
+    img: "alloys.svg",
+    title: "21 inch"
+  },
+  {
+    id: 64,
+    img: "alloys.svg",
+    title: "22 inch"
+  }
+];

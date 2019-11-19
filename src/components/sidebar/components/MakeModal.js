@@ -34,16 +34,23 @@ const MakeModal = () => {
 
       {modal && (
         <div className="myModal modalBrand">
-          <div className="modalHeader mb-3">
+          <div className="modalHeader mb-3 d-none d-lg-flex">
             <h6 className="modalTitle">Selected manufacturers</h6>
             <button className="close" onClick={() => setModal(false)}>
               <span>&times;</span>
             </button>
           </div>
+          <div className="modalSmallHeader  mb-3 d-xs-flex d-sm-flex d-md-flex d-lg-none">
+            <h6 className="modalTitle mb-3">Filter: Make</h6>
+            <button className="backBtn" onClick={() => setModal(false)}>
+              <i className="fas fa-chevron-left"></i> Back
+            </button>
+            <hr />
+          </div>
           <div className="modalBody">
             <div className="row">
               {brand.map((car, i) => (
-                <div className="col-2" key={i}>
+                <div className="col-4 col-lg-2" key={i}>
                   <button
                     type="button"
                     className="manufacturers"

@@ -23,15 +23,23 @@ const StyleModal = () => {
 
       {modal && (
         <div className="myModal modalStyle">
-          <div className="modalHeader headerFuel">
+          <div className="modalHeader headerFuel d-none d-lg-flex">
             <button className="close" onClick={() => setModal(false)}>
               <span>&times;</span>
             </button>
           </div>
+
+          <div className="modalSmallHeader  mb-3 d-xs-flex d-sm-flex d-md-flex d-lg-none">
+            <h6 className="modalTitle mb-3">Filter: Style</h6>
+            <button className="backBtn" onClick={() => setModal(false)}>
+              <i className="fas fa-chevron-left"></i> Back
+            </button>
+            <hr />
+          </div>
           <div className="modalBody">
             <div className="row">
               {styleType.map((car, i) => (
-                <div className="col-4" key={i}>
+                <div className="col-4 mb-2" key={i}>
                   <button
                     type="button"
                     className="manufacturers"

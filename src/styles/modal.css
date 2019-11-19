@@ -49,6 +49,11 @@
   padding: 1.5rem;
   width: 600px;
 }
+
+.myModal h6 {
+  font-weight: 800;
+}
+
 .modalBrand {
   top: -2%;
 }
@@ -62,9 +67,7 @@
   padding: 0.5rem;
   align-items: center;
 }
-.modalHeader h6 {
-  font-weight: 700;
-}
+
 .modalHeader .close {
   font-size: unset;
 }
@@ -132,9 +135,6 @@
   height: 5rem;
   margin: auto;
 }
-.modalDrive h6 {
-  font-weight: 800;
-}
 
 .modalStyle {
   width: 400px;
@@ -142,6 +142,58 @@
 }
 .modalStyle .manufacturers {
   margin: auto;
+  width: 4.5rem;
+}
+.modalStyle select {
+  width: 100%;
+}
+.modalStyle p {
+  font-size: 0.8rem;
+}
+
+.modalSpec {
+  width: 450px;
+  top: 50%;
+}
+.modalSpec .manufacturers {
+  width: 100%;
+  height: auto;
+}
+
+.modalSpec .icons-holder i {
+  margin-bottom: 0.2rem;
+  color: var(--primary-color);
+  position: absolute;
+  right: 17%;
+  top: 2%;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.smallModals {
+  width: 300px;
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 50px 6px;
+  background: #fff;
+  padding: 1rem;
+  height: 100px;
+  top: 0;
+  left: 111%;
+  justify-content: space-around;
+  z-index: 200;
+}
+
+.smallModals i {
+  top: 3px !important;
+  right: 2% !important;
+  padding: 0.2rem;
+}
+.smallModals .manufacturers {
+  width: 3.5rem;
+}
+
+.styleAlloys {
+  height: auto;
 }
 
 .popup-arrow {
