@@ -31,7 +31,7 @@ const SpecModal = () => {
 
   const parking = parkingModal ? (
     <Fragment>
-      <div className="row smallModals d-lg-none d-xl-none">
+      <div className="row smallModals  d-lg-none d-xl-none">
         <div className="modalSmallHeader  mb-3  ">
           <h6 className="modalTitle">Filter: Spec</h6>
           <h6 className="modalTitle mb-3">Sub Filter: Parking Sensos</h6>
@@ -445,6 +445,7 @@ const SpecModal = () => {
           <div className="modalFooter">
             <button className="btn btn-classic clearBtn">Clear All</button>
           </div>
+
           <div className="popup-arrow"></div>
           <div className="d-lg-none d-xl-none">{parking}</div>
           <div className="d-lg-none d-xl-none">{heated}</div>
